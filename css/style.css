@@ -1,0 +1,428 @@
+:root {
+  --white: #f7f8fa;
+  /* --dkbrown: #8C530D;
+  --orange: #F2911B;
+  --lightOrg: #F2A71B;
+  --yellow: #F2C53D;
+  --green: #667336; */
+
+  --blueOne: #B0CDD9;
+  --blueTwo: #69A7BF;
+  --blueThree: #4982A6;
+  --blueFour: #195073;
+  --blueFive:#0D2840;
+
+  --black: #171321;
+  --font-size: 1.3rem;
+  --lato: 'Lato', sans-serif;
+  --fran: 'Francois One', sans-serif;
+  --franShadow: 'Jacques Francois Shadow', cursive;
+  /* --sans: Oxygen, sans-serif; */
+}
+
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/* generic styles for the page */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--lato);
+  background-color: var(--blueOne);
+  color: var(--blueFive);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--blueFive);
+}
+
+a:hover {
+  color: var(--blueFive);
+  text-decoration: none;
+}
+
+img {
+width: 100%;
+}
+
+
+/* background color divs */
+
+.section-bluethree {
+  background-color: var(--blueThree);
+}
+
+.section-bluetwo{
+background-color:var(--blueTwo)
+}
+
+.white-box{
+background-color:var(--white);
+padding: 1rem;
+border-radius: 10px;
+color:var(--black);
+font-size: 1rem;
+line-height: 1.5;
+}
+
+
+
+.gradient {
+  /* background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);*/
+  /* background: rgb(105,167,191); */
+  /* background: linear-gradient(90deg, rgba(105,167,191,1) 0%, rgba(13,40,64,1) 100%); */
+  background: var(--blueFive);
+  height: 2px;
+}
+
+
+
+/* intro styles */
+
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  /* padding-bottom: 10rem; */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-image: url("../img/sunflower-photos.png");  */
+
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-size: 1rem;
+}
+
+.name span {
+  font-family: var(--fran);
+  font-size: 4rem;
+  color: var(--blueFive);
+  display: block;
+  font-weight: 300;
+}
+
+#intro h2 {
+  font-size: 1rem;
+  font-family: var(--lato);
+}
+
+#intro a [class*="fa-"] {
+  font-size: small;
+  padding: .5rem;
+  -webkit-transform:rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#intro .button {
+  font-size: 1rem;
+}
+
+/* contact section */
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+}
+
+
+/* navigation */
+
+nav {
+  font-family: var(--lato);
+  font-size: 80%;
+  padding: 2rem 1rem;
+}
+
+nav h1 a {
+  font-family: var(--lato);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav [class*="fa-"] {
+  font-size: 150%;
+  /* color: var(--blueThree); */
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  /* color: var(--blueThree); */
+}
+
+nav a {
+  color: var(--blueFive);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--blueThree);
+}
+
+.button {
+  background-color: var(--blueFive);
+  color: var(--blueOne);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--lato);
+}
+
+.button:hover {
+  color: white;
+  background-color: var(--blueTwo);
+}
+
+
+/* footer section */
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+/* portfolio section */
+#portfolio img{
+  border-radius: 10%;
+}
+
+#portfolio .text{
+  padding: 1rem;
+}
+
+#portfolio .white-box{
+  margin-top: 1rem;
+  font-size: .75rem;
+}
+
+#portfolio{
+  padding: 4rem 1rem;
+  }
+  
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1);
+  }
+  
+  #portfolio h3{
+  color: var(--blueFive);
+  }
+  
+  #portfolio h4 {
+  font-size: 1.25rem;
+  font-family:var(--lato);
+  margin: 0;
+  }
+  
+  #portfolio ul{
+  list-style-type: square;
+  /* padding-left: .5rem; */
+  text-align: left;
+  font-size: .75rem;
+  }
+
+  #portfolio li{
+    margin-bottom: .75rem;
+  }
+  
+  #portfolio img{
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--blueFive);
+  border-top: 1px solid var(--blueFive);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  }
+
+  #portfolio .image-container{
+    width: 400px; 
+    height: 100%; 
+    overflow: hidden; 
+  }
+
+
+/* projects section */
+
+#projects{
+padding: 4rem 1rem;
+}
+
+#projects h2 {
+font-size: 2.5rem;
+margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3{
+color: var(--green);
+}
+
+#projects h4 {
+font-size: 1rem;
+font-family:var(--lato);
+margin: 0;
+}
+
+#projects ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row-wrap;
+justify-content: flex-start;
+gap: 1rem;
+font-size: 1rem;
+}
+
+#projects img{
+margin: 2rem 0 4rem 0;
+border-left: 1px solid var(--blueFive);
+border-top: 1px solid var(--blueFive);
+border-radius: 25px;
+padding: 1rem;
+}
+
+@media (min-width: 850px) {
+  nav {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+  }
+}
+
+@media (min-width: 800px){
+article{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+#projects{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text{
+  grid-column: 5/12;
+  grid-row :1/2;
+  order: 2;
+  text-align: right;
+}
+#projects ul {
+  justify-content: flex-end
+}
+#projects .image{
+   grid-column: 1/6;
+   grid-row: 1/2
+}
+
+#projects .reverse .text{
+   grid-column: 1/7;
+   grid-row: 1/2;
+   order: 2;
+   text-align: left;  
+}
+
+#projects .reverse .image{
+  grid-column: 6/11;
+  grid-row: 1/2;
+}
+ #projects .reverse ul {
+  justify-content: flex-start;
+}
+
+#portfolio{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#portfolio ul {
+  justify-content: flex-end
+}
+#portfolio .image{
+   grid-column: 1/6;
+   grid-row: 1/2
+}
+#portfolio .image-container{
+  grid-column: 1/6;
+  grid-row: 1/2
+}
+
+#portfolio .reverse .text{
+   grid-column: 1/7;
+   grid-row: 1/2;
+   order: 2;
+   text-align: left;  
+}
+
+#portfolio .reverse .image{
+  grid-column: 6/11;
+  grid-row: 1/2;
+}
+ #portfolio .reverse ul {
+  justify-content: flex-start;
+}
+
+}
