@@ -6,7 +6,6 @@ This repository serves as the home for my portfolio website, a platform where I 
 Version 1
 
 ## Screenshots:
-
 The desktop mode for my website.
 ![Desktop Mode of Home Page](../images/Website_DesktopMode.png)
 
