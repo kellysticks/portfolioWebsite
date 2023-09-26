@@ -6,7 +6,12 @@ This repository serves as the home for my portfolio website, a platform where I 
 Version 1
 
 ## Screenshots:
-If applicable, include examples or screenshots that showcase your project in action. Visual aids can make your project more appealing and easier to understand.
+
+The desktop mode for my website.
+![Desktop Mode of Home Page](images/Website_DesktopMode.png)
+
+A glimpso at the mobile mode for my website.
+![Mobile Mode of Home Page](images/Website_MobileMode_V1.png)
 
 ## Support:
 Email me at kelly.stickell@gmail.com. I'm always open to suggestions for how to improve my code, resolve a defect, or general feedback!
