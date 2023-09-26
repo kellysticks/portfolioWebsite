@@ -7,10 +7,10 @@ Version 1
 
 ## Screenshots:
 The desktop mode for my website.
-![Desktop Mode of Home Page](../images/Website_DesktopMode.png)
+![Desktop Mode of Home Page](img/Website_DesktopMode.png)
 
-A glimpso at the mobile mode for my website.
-![Mobile Mode of Home Page](../images/Website_MobileMode_V1.png)
+A glimpse at the mobile mode for my website.
+![Mobile Mode of Home Page](img/Website_MobileMode_V1.png)
 
 ## Support:
 Email me at kelly.stickell@gmail.com. I'm always open to suggestions for how to improve my code, resolve a defect, or general feedback!
