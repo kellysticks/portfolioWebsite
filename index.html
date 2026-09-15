@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly Stickell's Portfolio Website</title>
+    <title>Kelly Stickell &middot; Front-End Developer</title>
+    <meta name="description" content="Kelly Stickell is a front-end developer building accessible, responsive web experiences.">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <script src="https://kit.fontawesome.com/4b501bf508.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,167 +16,112 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
 </head>
-<header>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <h1 class="logo"><a href="index.html"> <span class="fa-regular fa-sun" aria-hidden="true"></span>
-                    <span>Kelly Stickell</span>
-                </a>
-            </h1>
-            <ul class="menu-items">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="desktop-show" href="https://www.linkedin.com/in/kelly-stickell-646b47127/"
-                        target="_blank"><span class="fa-brands fa-linkedin" aria-hidden="true"></span> <span
-                            class="sr-only">LinkedIn</span>
-                    </a>
-                    <a class="mobile-show" href="https://www.linkedin.com/in/kelly-stickell-646b47127/"
-                        target="_blank">LinkedIn</a>
-                </li>
-                </li>
-                <li><a class="desktop-show" href="https://github.com/kellysticks" target="_blank"> <span
-                            class="fa-brands fa-square-github" aria-hidden="true"></span>
-                        <span class="sr-only">Github </span>
-                    </a>
-                    <a class="mobile-show" href="https://github.com/kellysticks" target="_blank">Github</a>
-                </li>
-                </li>
-                <li>
-                    <a class="desktop-show button" href="#" target="_blank">Resume</a>
-                    <a class="mobile-show" href="#" target="_blank">Resume</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</header>
 
 <body>
-    <div class="gradient"></div>
-    <section id="intro">
-        <h3 class="name"><span>Front-End Developer</span> </h3>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <nav class="navbar" aria-label="Primary">
+            <div class="navbar-container">
+                <a class="logo-link" href="index.html">
+                    <span class="fa-regular fa-sun" aria-hidden="true"></span>
+                    <span>Kelly Stickell</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"
+                    aria-label="Toggle navigation menu">
+                    <span class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </span>
+                </button>
+                <ul class="menu-items" id="primary-menu">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kelly-stickell-646b47127/" target="_blank"
+                            rel="noopener">
+                            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kellysticks" target="_blank" rel="noopener">
+                            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li><a class="button" href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <!-- <h2> I create digital experiences.</h2> -->
+    <main id="main">
+        <div class="gradient" role="presentation"></div>
+        <section id="intro">
+            <h1><span class="name">Front-End Developer</span><span class="role">Kelly Stickell</span></h1>
 
-        <p>I'm a front-end developer committed to continuously enhancing my web development skills. </p>
-        <p>I'm passionate about bringing high-quality, innovative and efficient solutions to end-users. Currently, I'm working at a technology
-            consulting company building user-centric Salesforce experiences. </p>
+            <p>I'm a front-end developer committed to continuously enhancing my web development skills.</p>
+            <p>I'm passionate about bringing high-quality, innovative and efficient solutions to end-users.
+                Currently, I'm working at a technology consulting company building user-centric Salesforce
+                experiences.</p>
 
-        <a a href="about.html" target="_blank" class="button">More About Me <span
-                class="fa-solid fa-arrow-up-long"></span></a>
-    </section>
-    <div class="gradient"></div>
-    <div>
+            <div class="actions">
+                <a href="about.html" class="button">More About Me <span class="fa-solid fa-arrow-up-long"
+                        aria-hidden="true"></span></a>
+                <a href="#contact" class="button button-secondary">Get In Touch</a>
+            </div>
+        </section>
+
+        <div class="gradient" role="presentation"></div>
         <section id="projects">
             <h2>My Latest Projects</h2>
-            <article>
-                <div class="text">
-                    <h4>Latest Project</h4>
-                    <h3>Wall of Wonder</h3>
-                    <p class="white-box">Description of the project. This should be fairly concise while also describing
-                        the key components that you developed or worked on. It can be as long as you need it to be but
-                        should at least be a few sentences long. Be sure to include specific links anywhere in the
-                        description. A link looks like <a
-                            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-                        <a href="#">like this</a> and <a href="#">like this</a>.
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SVG</li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-                        alt="Screenshot of the Wall of Wonder." />
-                </div>
-            </article>
-            <article class="reverse">
-                <div class="text">
-                    <h4>Latest Project 2</h4>
-                    <h3>Wall of Wonder</h3>
-                    <p class="white-box">Description of the project. This should be fairly concise while also describing
-                        the key components that you developed or worked on. It can be as long as you need it to be but
-                        should at least be a few sentences long. Be sure to include specific links anywhere in the
-                        description. A link looks like <a
-                            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-                        <a href="#">like this</a> and <a href="#">like this</a>.
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SVG</li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-                        alt="Screenshot of the Wall of Wonder." />
-                </div>
-            </article>
-            <article>
-                <div class="text">
-                    <h4>Latest Project</h4>
-                    <h3>Wall of Wonder</h3>
-                    <p class="white-box">Description of the project. This should be fairly concise while also describing
-                        the key components that you developed or worked on. It can be as long as you need it to be but
-                        should at least be a few sentences long. Be sure to include specific links anywhere in the
-                        description. A link looks like <a
-                            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
-                        <a href="#">like this</a> and <a href="#">like this</a>.
-                    </p>
-                    <h4>Technologies used include:</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SVG</li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-                        alt="Screenshot of the Wall of Wonder." />
-                </div>
-            </article>
+            <div class="coming-soon white-box">
+                <p>I'm currently building out a few projects worth showing off, so this section is under
+                    construction. In the meantime, take a look at what I'm working on:</p>
+                <ul>
+                    <li><a href="https://github.com/kellysticks" target="_blank" rel="noopener">My GitHub
+                            profile</a> &mdash; source code for this site and other work in progress.</li>
+                    <li>This very portfolio &mdash; rebuilt from scratch to be responsive and accessible.</li>
+                </ul>
+                <p>Check back soon, or <a href="#contact">get in touch</a> if you'd like to hear more about what
+                    I'm working on.</p>
+            </div>
         </section>
-    </div>
-    <div class="gradient"></div>
-    <div>
+
+        <div class="gradient" role="presentation"></div>
         <section id="contact">
-            <h2> Contact me </h2>
+            <h2>Contact me</h2>
             <p>I'm always interested in hearing about the web and how to better myself as a developer.</p>
             <p><a href="mailto:kelly.stickell@gmail.com" class="button">Email me</a></p>
         </section>
-    </div>
-    <div class="gradient"></div>
+    </main>
+
+    <div class="gradient" role="presentation"></div>
     <footer>
-        <h2> Kelly Stickell &middot; Front-End Developer</h2>
+        <h2>Kelly Stickell &middot; Front-End Developer</h2>
         <ul>
             <li>
-                <a href="https://www.linkedin.com/in/kelly-stickell-646b47127/" target="_blank">
-                    <span class="fa-brands fa-linkedin" aria-hidden="true"></span> <span class="sr-only">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/kelly-stickell-646b47127/" target="_blank" rel="noopener">
+                    <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/kellysticks" target="_blank">
+                <a href="https://github.com/kellysticks" target="_blank" rel="noopener">
                     <span class="fa-brands fa-square-github" aria-hidden="true"></span>
-                    <span class="sr-only">Github </span>
+                    <span class="sr-only">GitHub</span>
                 </a>
             </li>
             <li>
                 <a href="mailto:kelly.stickell@gmail.com">
                     <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-                    <span class='sr-only'>Email</span></a>
+                    <span class="sr-only">Email</span>
+                </a>
             </li>
         </ul>
-        <p><small>&copy; 2023 Kelly Stickell. All rights reserved.</small></p>
+        <p><small>&copy; 2026 Kelly Stickell. All rights reserved.</small></p>
     </footer>
 </body>
 
